@@ -166,7 +166,7 @@ Contact: contact@hencework.com
 					</li>
 					<li class="nav-item">
 						<div class="dropdown dropdown-notifications">
-							<a href="#" class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover dropdown-toggle no-caret" data-bs-toggle="dropdown" data-dropdown-animation role="button" aria-haspopup="true" aria-expanded="false"><span class="icon"><span class="position-relative"><span class="feather-icon"><i data-feather="bell"></i></span><span class="badge badge-success badge-indicator position-top-end-overflow-1"></span></span></span></a>
+							<a href="#" class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover dropdown-toggle no-caret" data-bs-toggle="dropdown" data-dropdown-animation role="button" aria-haspopup="true" aria-expanded="false"><span class="icon"><span class="position-relative"><span class="feather-icon"><i data-feather="bell"></i></span><span class="badge badge-pink badge-indicator position-top-end-overflow-1"></span></span></span></a>
 							<div class="dropdown-menu dropdown-menu-end p-0">
 								<h6 class="dropdown-header px-4 fs-6">Notifications<a href="#" class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"><span class="icon"><span class="feather-icon"><i data-feather="settings"></i></span></span></a>
 								</h6>
@@ -408,7 +408,7 @@ Contact: contact@hencework.com
 											</svg>
 										</span>
 									</span>
-									<span class="nav-link-text">Dashboard</span>
+									<span class="nav-link-text">Inicio</span>
 									<span class="badge badge-sm badge-soft-pink ms-auto">Hot</span>
 								</a>
 							</li>
@@ -421,9 +421,10 @@ Contact: contact@hencework.com
 						</div>
 						<ul class="navbar-nav flex-column">
 							<li class="nav-item">
-								<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_chat">
-									<span class="nav-icon-wrap">
-										<span class="svg-icon">
+								<a class="nav-link" href="chats.html">
+									<span class="nav-icon-wrap position-relative">
+										<span class="badge badge-sm badge-primary badge-sm badge-pill position-top-end-overflow">3</span>
+										<!-- <span class="svg-icon">
 											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message-dots" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 												<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
 												<path d="M4 21v-13a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-9l-4 4" />
@@ -431,9 +432,18 @@ Contact: contact@hencework.com
 												<line x1="8" y1="11" x2="8" y2="11.01" />
 												<line x1="16" y1="11" x2="16" y2="11.01" />
 											</svg>
+										</span> -->
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message-circle-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+												<path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1" />
+												<line x1="12" y1="12" x2="12" y2="12.01" />
+												<line x1="8" y1="12" x2="8" y2="12.01" />
+												<line x1="16" y1="12" x2="16" y2="12.01" />
+											</svg>
 										</span>
 									</span>
-									<span class="nav-link-text">Chat</span>
+									<span class="nav-link-text">Mensajería</span>
 								</a>
 								<ul id="dash_chat" class="nav flex-column collapse  nav-children">
 									<li class="nav-item">
@@ -449,9 +459,19 @@ Contact: contact@hencework.com
 											</li>
 										</ul>	
 									</li>	
+									<li class="nav-item">
+										<ul class="nav flex-column">
+											<li class="nav-item">
+												<a class="nav-link" href="chatpopup.html"><span class="nav-link-text">Direct Message</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="chatbot.html"><span class="nav-link-text">Chatbot</span></a>
+											</li>
+										</ul>	
+									</li>
 								</ul>	
 							</li>	
-							<li class="nav-item">
+							<!-- <li class="nav-item">
 								<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_chatpop">
 									<span class="nav-icon-wrap">
 										<span class="svg-icon">
@@ -478,54 +498,35 @@ Contact: contact@hencework.com
 										</ul>	
 									</li>	
 								</ul>	
-							</li>	
+							</li>	 -->
+						
 							<li class="nav-item">
-								<a class="nav-link" href="calendar.html">
+								<a class="nav-link" href="payments.html">
 									<span class="nav-icon-wrap">
-										<span class="svg-icon">
-											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-												<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-												<path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
-												<circle cx="18" cy="18" r="4" />
-												<path d="M15 3v4" />
-												<path d="M7 3v4" />
-												<path d="M3 11h16" />
-												<path d="M18 16.496v1.504l1 1" />
-											</svg>
-										</span>
+										<i class="icon" data-icon="&#xe062;"></i>
+
 									</span>
-									<span class="nav-link-text">Calendar</span>
-								</a>
-							</li>	
-							<li class="nav-item">
-								<a class="nav-link" href="email.html">
-									<span class="nav-icon-wrap">
-										<span class="svg-icon">
-											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-inbox" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-												<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-												<rect x="4" y="4" width="16" height="16" rx="2" />
-												<path d="M4 13h3l3 3h4l3 -3h3" />
-											</svg>
-										</span>
-									</span>
-									<span class="nav-link-text">Email</span>
+									<span class="nav-link-text">Pagos</span>
 								</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_scrumboard">
+								<a class="nav-link" href="requests.html">
 									<span class="nav-icon-wrap position-relative">
-										<span class="badge badge-sm badge-primary badge-sm badge-pill position-top-end-overflow">3</span>
+										<!-- <span class="badge badge-sm badge-primary badge-sm badge-pill position-top-end-overflow">3</span> -->
 										<span class="svg-icon">
-											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-layout-kanban" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-												<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-												<line x1="4" y1="4" x2="10" y2="4" />
-												<line x1="14" y1="4" x2="20" y2="4" />
-												<rect x="4" y="8" width="6" height="12" rx="2" />
-												<rect x="14" y="8" width="6" height="6" rx="2" />
-											</svg>
+											
+												<span class="svg-icon">
+													<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-digit" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+														<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+														<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+														<rect x="9" y="12" width="3" height="5" rx="1" />
+														<path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+														<path d="M15 12v5" />
+													</svg>
+												</span>
 										</span>
 									</span>
-									<span class="nav-link-text">Scrumboard</span>
+									<span class="nav-link-text">Solicitudes</span>
 								</a>
 								<ul id="dash_scrumboard" class="nav flex-column collapse  nav-children">
 									<li class="nav-item">
@@ -544,7 +545,7 @@ Contact: contact@hencework.com
 									</li>	
 								</ul>	
 							</li>
-							<li class="nav-item">
+							<!-- <li class="nav-item">
 								<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_contact">
 									<span class="nav-icon-wrap">
 										<span class="svg-icon">
@@ -678,7 +679,7 @@ Contact: contact@hencework.com
 									</li>	
 								</ul>	
 							</li>
-							<li class="nav-item active">
+							<li class="nav-item">
 								<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_invoice">
 									<span class="nav-icon-wrap">
 										<span class="svg-icon">
@@ -705,7 +706,7 @@ Contact: contact@hencework.com
 											<li class="nav-item">
 												<a class="nav-link" href="create-invoice.html"><span class="nav-link-text">Create Invoice</span></a>
 											</li>
-											<li class="nav-item active">
+											<li class="nav-item">
 												<a class="nav-link" href="invoice-preview.html"><span class="nav-link-text">Invoice Preview</span></a>
 											</li>
 										</ul>	
@@ -741,11 +742,11 @@ Contact: contact@hencework.com
 										</ul>	
 									</li>	
 								</ul>	
-							</li>
+							</li> -->
 						</ul>
 					</div>
 					<div class="menu-gap"></div>
-					<div class="menu-group">
+					<!-- <div class="menu-group">
 						<div class="nav-header">
 							<span>Pages</span>
 						</div>
@@ -824,7 +825,7 @@ Contact: contact@hencework.com
 									</li>
 								</ul>
 							</li>
-							<li class="nav-item">
+							<li class="nav-item active">
 								<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_profile">
 									<span class="nav-icon-wrap">
 										<span class="svg-icon">
@@ -844,7 +845,7 @@ Contact: contact@hencework.com
 								<ul id="dash_profile" class="nav flex-column collapse  nav-children">
 									<li class="nav-item">
 										<ul class="nav flex-column">
-											<li class="nav-item">
+											<li class="nav-item active">
 												<a class="nav-link" href="profile.html">
 													<span class="nav-link-text">Profile</span>
 												</a>
@@ -903,19 +904,19 @@ Contact: contact@hencework.com
 								</a>
 							</li>
 						</ul>
-					</div>
-					<div class="callout card card-flush bg-orange-light-5 text-center mt-5 w-220p mx-auto">
+					</div> -->
+					<!-- <div class="callout card card-flush bg-orange-light-5 text-center mt-5 w-220p mx-auto">
 						<div class="card-body">
 							<h5 class="h5">Quickly Build Applications</h5>
 							<p class="p-sm card-text">Exclusively for webapps Based on Bootstrap</p>
 							<a href="https://nubra-ui.hencework.com/" target="_blank" class="btn btn-primary btn-block">Go Nubra-UI</a>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<!-- /Main Menu -->
 		</div>
-        <div id="hk_menu_backdrop" class="hk-menu-backdrop"></div>
+        <!-- <div id="hk_menu_backdrop" class="hk-menu-backdrop"></div> -->
         <!-- /Vertical Nav -->
 
 		<!-- Main Content -->
@@ -923,7 +924,7 @@ Contact: contact@hencework.com
 			<div class="hk-pg-body py-0">
 				<div class="invoiceapp-wrap">
 					<nav class="invoiceapp-sidebar">
-						<div data-simplebar class="nicescroll-bar">
+						<!-- <div data-simplebar class="nicescroll-bar">
 							<div class="menu-content-wrap">
 								<button type="button" aria-expanded="false" data-bs-toggle="dropdown" class="btn btn-primary btn-rounded btn-block mb-4 dropdown-toggle">
 									Create
@@ -1025,9 +1026,9 @@ Contact: contact@hencework.com
 									</ul>
 								</div>
 							</div>
-						</div>
+						</div> -->
 						<!--Sidebar Fixnav-->
-						<div class="invoiceapp-fixednav">
+						<!-- <div class="invoiceapp-fixednav">
 							<div class="hk-toolbar">
 								<ul class="nav nav-light">
 									<li class="nav-item nav-link">
@@ -1041,25 +1042,25 @@ Contact: contact@hencework.com
 									</li>
 								</ul>
 							</div>
-						</div>
+						</div> -->
 						<!--/ Sidebar Fixnav-->
 					</nav>
-					<div class="invoiceapp-content">
+					<div class="invoiceapp-content" style="padding-left: 0px !important;">
 						<div class="invoiceapp-detail-wrap">
 							<header class="invoice-header">
 								<div class="d-flex align-items-center">
-									<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="create-invoice.html">
+									<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="payments.html">
 										<span class="icon">
 											<span class="feather-icon"><i data-feather="chevron-left"></i></span>
 										</span>
 									</a>
 									<div class="v-separator d-sm-inline-block d-none"></div>
 									<a class="invoiceapp-title link-dark ms-1 ms-sm-0" href="#">
-										<h1>Template Preview</h1>
+										<h1>Detalle de pago</h1>
 									</a>
 								</div>
 								<div class="invoice-options-wrap">	
-									<a href="create-invoice.html" class="btn btn-soft-primary flex-shrink-0 d-md-inline-block d-none">Start with Template</a>
+									<!-- <a href="create-invoice.html" class="btn btn-soft-primary flex-shrink-0 d-md-inline-block d-none">Start with Template</a> -->
 									<div class="v-separator d-md-inline-block d-none"></div>
 									<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover hk-navbar-togglable ms-0 d-md-inline-block d-none" href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Collapse">
 										<span class="icon">
@@ -1068,7 +1069,7 @@ Contact: contact@hencework.com
 										</span>
 									</a>
 								</div>
-								<div class="hk-sidebar-togglable"></div>
+								<!-- <div class="hk-sidebar-togglable"></div> -->
 							</header>
 							<div class="invoice-body">
 								<div data-simplebar class="nicescroll-bar">
@@ -1079,7 +1080,7 @@ Contact: contact@hencework.com
 													<img src="dist/img/logo-light.png" alt="logo">
 												</div>
 												<div class="col-lg-4 offset-lg-5 offset-md-3 col-md-4 mb-md-0 mb-2">
-													<h2 class="d-flex justify-content-md-end mb-0">Invoice</h2>
+													<h2 class="d-flex justify-content-md-end mb-0"># 4523154</h2>
 												</div>	
 											</div>	
 											<div class="row mt-4">
